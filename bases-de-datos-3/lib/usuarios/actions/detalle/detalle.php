@@ -18,6 +18,6 @@ $id= $get['id'];
 <h6 class="card-subtitle mb-2 text-body-secondary">correo</h6>
 <p class="card-text">telefono</p>
 <p class="card-text">direccion</p>
-<a href="#" class="card-link">regresar</a>
+<a href="l" class="card-link">regresar</a>
 
 </body>

@@ -1,6 +1,5 @@
 <?php
 require_once '../../lib/usuarios/actions/conexion/conexion.php';
-require_once 'config/validate_session.php';
 ?>
 <!DOCTYPE html>
 <lang="en">
@@ -54,16 +53,13 @@ require_once 'config/validate_session.php';
     
     ?>
     <tr>
-        <td><?php echo $row['name'];?></td>
+        <td><?php echo $row['addres'];?></td>
 
-        <td><?php echo $row['email'];?></td>
+        <td><?php echo $row['city'];?></td>
 
-        <td><?php echo $row['phone'];?></td>
+        <td><?php echo $row['state'];?></td>
 
-        <td><?php echo $row['genero h1 m0'];?></td>
-
-        <td><?php echo $row['addres'].",". $row['city'].",". $row['city'].",". $row['state'];?></td>
-
+        
         <td>
             <a href="detalle.php?id=<?php echo $row['id'] ?> " class="btn btn-success">detalle</a>
 

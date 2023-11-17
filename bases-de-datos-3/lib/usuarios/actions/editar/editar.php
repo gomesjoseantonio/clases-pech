@@ -26,7 +26,7 @@ $row=mysqli_fetch_array($result);
 <div class="row">
 <div class="col">
 
-<form action="actions/insertar.php" method="POST">
+<form action="insertar/insertar.php" method="POST">
 
     <div>
     <div class="form-grupo">
