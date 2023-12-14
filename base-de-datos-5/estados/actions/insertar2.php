@@ -8,8 +8,8 @@ if(!isset($_POST['register'])){
 
 require_once '../../lib/conexion.php';
 
-$query="INSERT INTO estados (name,address,city,state) value
-('$nombre','$direccion','$ciudad','$estado') ";
+$query="INSERT INTO estados (nombre) value
+('$estado') ";
 
 mysqli_query($conexion,$query);
 

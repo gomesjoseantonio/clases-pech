@@ -19,6 +19,13 @@ require_once '../lib/conexion.php';
   </div>
 </nav>
 
+<!-- As a link -->
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../tareas/index.php">TAREAS</a>
+  </div>
+</nav>
+
 <div class="container my-5">
 <div class="row">
 <div class="col">
@@ -49,7 +56,7 @@ require_once '../lib/conexion.php';
   
     <tr>
 
-        <td><?php echo $row['name'];?></td>
+        <td><?php echo $row['nombre'];?></td>
 
     
         

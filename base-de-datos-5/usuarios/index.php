@@ -12,10 +12,18 @@ require_once '../lib/conexion.php';
 
 <body>
 
+
 <!-- As a link -->
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="../estados/index.php">ESTADOS</a>
+  </div>
+</nav>
+
+<!-- As a link -->
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../tareas/index.php">TAREAS</a>
   </div>
 </nav>
 

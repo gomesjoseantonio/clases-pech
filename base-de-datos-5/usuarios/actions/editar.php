@@ -6,8 +6,6 @@ if(!isset($_POST['register'])){
 exit();
 };
 
-
-
 require_once '../../lib/conexion.php';
 
 $query="UPDATE usuarios SET name='$nombre', email='$correo',

@@ -32,7 +32,12 @@ $row=mysqli_fetch_array($result);
 
     <div class="form-grupo">
     <label for="nombre">nombre</label>
-    <input value="<?php  echo $row['name']; ?>" type="text" id="nombre" name="nombre" class="for-control">
+    <input value="<?php  echo $row['nombre']; ?>" type="text" id="nombres" name="nombres" class="for-control">
+    </div>
+
+    <div class="form-grupo">
+    <label for="ids">id</label>
+    <input value="<?php  echo $row['id']; ?>" type="text" id="ids" name="ids" class="for-control">
     </div>
 
     <div>

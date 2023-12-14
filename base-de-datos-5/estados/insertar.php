@@ -17,17 +17,12 @@
 
 <div>
 
- <div>
+<div>
     <div class="form-grupo">
-    <label for="nombre">nombre</label>
-    <input type="text" id="nombre" name="nombre" class="for-control">
+    <label for="estado">estado</label>
+    <input type="text" id="estado" name="estado" class="for-control">
     </div>
-
-    <div class="form-grupo">
-    <label for="direccion">correo</label>
-    <input type="text" id="address" name="direccion" class="for-control">
-    </div>
-
+ 
     <div>
     <div class="my-3">
     <input type="submit" name="register" class="btn btn-success">

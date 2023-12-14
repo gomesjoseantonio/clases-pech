@@ -19,10 +19,8 @@ $row = mysqli_fetch_assoc($result);
 ?>
 <div class="card" style="width: 18rem;"> 
 <div class="card-body">
-<h5 class="card-title"><td>Nombre: <?php echo $row['name'];?></td></h5>
-<h6 class="card-subtitle mb-2 text-body-secondary">Ciudad: <td><?php echo $row['city'];?></td></h6>
-<p class="card-text"><td>Estado: <?php echo $row['state'];?></td></p>
-
+<h5 class="card-title"><td>Nombre: <?php echo $row['nombre'];?></td></h5>
+<h5 class="card-title"><td>id: <?php echo $row['id'];?></td></h5>
 <a href="index.php" class="card-link">regresar</a>
 
 

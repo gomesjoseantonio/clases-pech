@@ -1,4 +1,3 @@
-
 <?php
 extract($_POST);
 
@@ -15,13 +14,14 @@ if (!isset($conexion)) {
     exit();
 }
 
-// Asegúrate de que las variables estén definidas y no estén vacías
-if (empty($nombre) || empty($direccion) || empty($ciudad) || empty($estado) || empty($id)) {
-    echo "Error: Alguno de los campos está vacío.";
+// Verifica la existencia y no vacío de las variables
+if (!isset($nombres) || !isset($id) || empty($nombres) || empty($id)) {
+    echo "Error: Alguno de los campos está vacío o no definido.";
     exit();
 }
 
-$query = "UPDATE estados SET name=$nombre, address=$direccion, city=$ciudad, state=$estado WHERE id=$id";
+// Corrige la consulta SQL
+$query = "UPDATE estados SET nombre='$nombres', id='$ids' WHERE id=?";
 $stmt = mysqli_prepare($conexion, $query);
 
 // Asegúrate de que la declaración preparada se haya creado correctamente
@@ -30,28 +30,18 @@ if (!$stmt) {
     exit();
 }
 
-// Vincular parámetros
-mysqli_stmt_bind_param($stmt, "ssssi", $nombre, $direccion, $ciudad, $estado, $id);
+// Vincula parámetros
+mysqli_stmt_bind_param($stmt, "si", $nombres, $id);
 
-// Ejecutar la declaración
+// Ejecuta la declaración
 mysqli_stmt_execute($stmt);
 
-// Cerrar la declaración
+// Cierra la declaración
 mysqli_stmt_close($stmt);
 
-// Cerrar la conexión
+// Cierra la conexión
 mysqli_close($conexion);
 
-// Redirigir después de la actualización
+// Redirige después de la actualización
 header("location:../");
-// Antes de la verificación de campos
-var_dump($nombre, $direccion, $ciudad, $estado, $id);
-
-// Después de la verificación de campos
-if (empty($nombre) || empty($direccion) || empty($ciudad) || empty($estado) || empty($id)) {
-    echo "Error: Alguno de los campos está vacío.";
-    exit();
-}
-
 ?>
-
