@@ -1,0 +1,103 @@
+
+
+Problema:
+
+Resolver la ecuación diferencial ordinaria (EDO) utilizando los cuatro métodos de la Transformada de Laplace:
+
+\[ \frac{d^2y}{dt^2} + 3\frac{dy}{dt} + 2y = 0, \quad y(0) = 1, \quad \frac{dy}{dt}(0) = 0 \]
+
+Solución:
+
+Método 1: Método de la Transformada de Laplace Directa
+
+Aplicamos la transformada de Laplace a ambos lados de la ecuación diferencial:
+
+\[ \mathcal{L} \{ \frac{d^2y}{dt^2} \} + 3\mathcal{L} \{ \frac{dy}{dt} \} + 2\mathcal{L} \{ y \} = 0 \]
+
+Donde:
+- \( \mathcal{L} \) denota la transformada de Laplace.
+- \( \mathcal{L} \{ \frac{d^2y}{dt^2} \} = s^2Y(s) - sy(0) - \frac{dy}{dt}(0) \)
+- \( \mathcal{L} \{ \frac{dy}{dt} \} = sY(s) - y(0) \)
+- \( \mathcal{L} \{ y \} = Y(s) \)
+
+Sustituimos las condiciones iniciales \( y(0) = 1 \) y \( \frac{dy}{dt}(0) = 0 \):
+
+\[ s^2Y(s) - s - 1 + 3(sY(s) - 1) + 2Y(s) = 0 \]
+
+Resolvemos para \( Y(s) \):
+
+\[ s^2Y(s) + 3sY(s) + 2Y(s) - s - 3 = 0 \]
+\[ Y(s)(s^2 + 3s + 2) = s + 3 \]
+\[ Y(s) = \frac{s + 3}{s^2 + 3s + 2} \]
+
+Ahora, invertimos la transformada de Laplace para encontrar \( y(t) \).
+
+Método 2: Uso de Fracciones Parciales
+
+Descomponemos \( Y(s) \) en fracciones parciales:
+
+\[ Y(s) = \frac{s + 3}{s^2 + 3s + 2} = \frac{A}{s + 1} + \frac{B}{s + 2} \]
+
+Encontramos \( A \) y \( B \) resolviendo para ellos.
+
+Método 3: Método de Inversión de Laplace
+
+Una vez que tenemos \( Y(s) \) en términos de fracciones parciales, aplicamos la inversión de Laplace para obtener \( y(t) \).
+
+Método 4: Método de Solución de Ecuaciones Diferenciales Simultáneas
+
+Reescribimos \( \frac{d^2y}{dt^2} + 3\frac{dy}{dt} + 2y = 0 \) como un conjunto de ecuaciones diferenciales simultáneas de primer orden y luego resolvemos el sistema utilizando métodos convencionales.
+
+Cada uno de estos métodos nos llevará a la solución de la ecuación diferencial dada.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ Título: Diseño y Análisis de una Red Eléctrica Residencial
+
+En este proyecto, diseñaremos y analizaremos una red eléctrica para un entorno residencial típico. El objetivo es comprender los principios básicos de los circuitos eléctricos, la distribución de energía y la seguridad eléctrica en el hogar. Utilizaremos herramientas de simulación para modelar y analizar el rendimiento de la red eléctrica.
+
+ Objetivos:
+
+1. Diseñar un diagrama de red eléctrica para un hogar residencial.
+2. Calcular la carga eléctrica estimada y determinar los requisitos de potencia.
+3. Seleccionar los componentes adecuados para el sistema eléctrico.
+4. Utilizar software de simulación para analizar el rendimiento de la red eléctrica.
+5. Evaluar la eficiencia y seguridad del diseño propuesto.
+
+ Materiales:
+
+- Software de simulación de circuitos eléctricos (por ejemplo, SPICE, LTspice, Proteus).
+- Componentes eléctricos virtuales (interruptores, fusibles, cables, etc.).
+- Documentación técnica sobre estándares eléctricos residenciales.
+
+Metodología:
+
+1. Diseño de la Red Eléctrica Residencial:
+   - Identificar los principales dispositivos y electrodomésticos que estarán presentes en el hogar.
+   - Diseñar un diagrama de circuito que represente la conexión de estos dispositivos.
+   - Determinar la ubicación de los puntos de salida de energía y los interruptores de circuito.
+
+2. Cálculo de la Carga Eléctrica:
+   - Estimar la potencia requerida para cada dispositivo y sumarlas para obtener la carga total.
+   - Considerar la demanda máxima esperada y los factores de corrección para dimensionar adecuadamente el sistema eléctrico.
+
+3. Selección de Componentes:
+   - Seleccionar cables con la capacidad de corriente adecuada para soportar la carga prevista.
+   - Elegir interruptores de circuito, fusibles y otros dispositivos de protección según las necesidades de seguridad y regulaciones locales.
+
+4. Simulación y Análisis:
+   - Utilizar el software de simulación para modelar la red eléctrica diseñada.
+   - Realizar análisis de corriente, voltaje y pérdidas de energía en diferentes condiciones de carga.
+   - Identificar posibles problemas, como sobrecargas o caídas de voltaje, y realizar ajustes en el diseño según sea necesario.
+
+5. Evaluación de Eficiencia y Seguridad:
+   - Evaluar la eficiencia del sistema en términos de pérdidas de energía y costos operativos.
+   - Verificar que el diseño cumpla con las normativas de seguridad eléctrica y realizar ajustes si es necesari
+
+Resultados Esperados:
+
+- Un diseño detallado de la red eléctrica residencial, incluyendo el diagrama de circuito y la especificación de componentes.
+- Datos de simulación que demuestren el rendimiento y la eficiencia del sistema.
+- Un informe que documente el proceso de diseño, análisis y evaluación, con conclusiones y recomendaciones
+Este proyecto proporcionará una comprensión práctica de los conceptos clave relacionados con los circuitos y redes eléctricas, así como experiencia en el diseño y análisis de sistemas eléctricos residenciales. Además, ayudará a desarrollar habilidades en el uso de herramientas de simulación para la ingeniería eléctrica.
